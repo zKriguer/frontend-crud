@@ -86,7 +86,12 @@ form input::placeholder{
 }
 /*media queries*/
 @media (max-width: 768px){
-
+    .container{
+        display: flex; flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        max-width:40ch;
+    }
     html{
         display: flex;
         justify-content: center;
