@@ -5,6 +5,7 @@
     padding: 0;
 }
 body{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -19,7 +20,7 @@ body{
 }
 h1{
     color: #224957;
-    font-size: 5rem;
+    font-size: 2.2rem;
     margin: 0;
     text-shadow: 0px 3px 5px grey;
 }
@@ -30,7 +31,7 @@ h1{
 }
 .form2 h2{
     text-align: center;
-    font-size: 1.01rem;
+    font-size: 1.01rem; 
 }
 #submit{
     font-size: 1rem;
@@ -60,7 +61,7 @@ form input{
     margin: 15px;
     border-radius: 10px;
     padding: 1rem;
-    max-width: 30rem;
+    max-width: 50rem;
     width: 28rem;
     background-color: #224957;
     border: 0;
@@ -82,4 +83,35 @@ form input::placeholder{
 
 #submitdel:hover{
     background-color: #ff0000;
+}
+
+@media (max-width: 768px){
+
+    html{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    form label{
+        text-align: center;
+    }
+    form input{
+        width: 360px;
+    }
+    .form2{
+        width: 360px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        justify-content: flex-start;
+        margin-top: 200px;
+    }
 }
