@@ -26,6 +26,6 @@ submit.addEventListener('click', async () =>{
         },
         body: JSON.stringify(user)
     })
-    window.location.href = `zkriguer.github.io/frontend-crud/Login.html`
+    window.location.href = `login.html`
     alert('Conta criada com sucesso!')
 })
