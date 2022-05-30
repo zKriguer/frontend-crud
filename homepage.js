@@ -37,7 +37,7 @@
                 "Content-Type": 'application/json'
             },
         })
-        window.location.href = `zkriguer.github.io/frontend-crud/cadastro.html`
+        window.location.href = `cadastro.html`
         alert('CONTA DELETADA COM SUCESSO')
     })
 })()
