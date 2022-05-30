@@ -1,0 +1,104 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+html{
+    font-size: 10px;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #224957;
+    font-size: 5rem;
+    margin: 0;
+    text-shadow: 0px 3px 5px grey;
+}
+p{
+    font-size: 1.5rem;
+    color: #224957;
+    font-weight: 600;
+    text-shadow: 0px 3px 5px grey;
+}
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+form input.light{
+    margin: 15px;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 30rem;
+    width: 28rem;
+    color: white;
+    background-color: #224957;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+form input.light::placeholder{
+    color: white;
+    font-size: 1.2rem;
+}
+#submit{
+    font-size: 1.2rem;
+    background-color: #44e285;
+    color: #224957;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container a{
+    display: flex;
+    font-size: 1.2rem;
+    background-color: #cfd3d4;
+    color: #224957;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 30rem;
+    width: 28rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#submit:hover{
+    color: white;
+}
+.container a:hover{
+    color: white;
+}
+.footer{
+    margin: 0;
+    position:fixed;
+    bottom: 0px;
+    background-image: url(images/Vectors.png);
+    background-size: cover;
+    width: 100%;
+    height: 8rem;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+
+@media (min-width: 768px ){
+    html{
+        font-size: 15px;
+    }
+}
+
