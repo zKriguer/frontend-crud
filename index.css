@@ -84,7 +84,7 @@ form input::placeholder{
 #submitdel:hover{
     background-color: #ff0000;
 }
-
+/*media queries*/
 @media (max-width: 768px){
 
     html{
