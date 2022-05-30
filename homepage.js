@@ -12,9 +12,10 @@
     submitA.addEventListener('click', async () => {
         const name = document.getElementById('nome').value
         const password = document.getElementById('senha').value
+        const oldpassword = document.getElementById('senhaantiga').value
     
         const user = { name, password }
-    
+        if(oldpassword == '') return alert('Insira sua senha antiga')
         const patch = await fetch(`https://backend-kriguer.herokuapp.com/api/users/${email}`, {
             method: 'PATCH',
             headers: {
@@ -26,6 +27,8 @@
     })
 
     submitD.addEventListener('click', async () => {
+        const actualpassword = document.getElementById('senhaatual').value
+        if(actualpassword == '') return alert('Insira sua senha atual para deletar sua conta')
         const deleted = await fetch(`https://backend-kriguer.herokuapp.com/api/users/${email}`, {
             method: 'DELETE',
             headers: {
